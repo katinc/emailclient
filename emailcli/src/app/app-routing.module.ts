@@ -5,6 +5,11 @@ import {EmailFormComponent} from "./email-form/email-form.component";
 
 const routes: Routes = [
   { path: 'users', component: EmailFormComponent },
+  /*{
+    path: '',
+    redirectTo: 'users',
+    pathMatch: 'full'
+  }*/
 ];
 
 @NgModule({

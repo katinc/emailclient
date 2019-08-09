@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {MatDialog} from '@angular/material'
+import {OpenDialogComponent} from "./open-dialog/open-dialog.component";
 
 @Component({
   selector: 'app-root',
@@ -7,8 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title: string;
+  dialog: MatDialog;
 
   constructor(){
     this.title = 'Email'
+  }
+
+  openDialog(){
+    this.dialog.open(OpenDialogComponent);
   }
 }

@@ -1,4 +1,5 @@
 export class User {
-  emailAddress: string;
+  emailReceiver: string;
   emailMessage: string;
+  emailSubject: string;
 }

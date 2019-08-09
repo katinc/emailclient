@@ -7,11 +7,13 @@ import { EmailFormComponent } from './email-form/email-form.component';
 import {MailService} from "./service/mail.service";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import { OpenDialogComponent } from './open-dialog/open-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmailFormComponent
+    EmailFormComponent,
+    OpenDialogComponent
   ],
   imports: [
     BrowserModule,
